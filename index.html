@@ -139,6 +139,18 @@
   .value-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.6; margin: 0; }
 
   .origin { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 48px; align-items: center; }
+
+  .zenos-section { background: var(--navy); background: linear-gradient(155deg, var(--navy), #0a3454); padding: 90px 0; }
+  .zenos-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 48px; align-items: center; }
+  .zenos-mockup { display: flex; }
+  .zenos-placeholder {
+    width: 100%; aspect-ratio: 16/9; border-radius: var(--r-lg);
+    border: 1.5px dashed rgba(198,174,131,.5); background: rgba(255,255,255,.04);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+    text-align: center; padding: 20px;
+  }
+  .zp-label { font-family: "Bodoni Moda", serif; font-size: 18px; color: var(--champagne); }
+  .zp-hint { font-size: 12px; color: #9db3c2; }
   .origin-card { background: var(--navy); background: linear-gradient(160deg, var(--navy), var(--blue-deep)); color: #fff; border-radius: var(--r-lg); padding: 40px; }
   .origin-card .eyebrow { background: var(--champagne); color: var(--navy); }
   .origin-card h2 { font-size: 25px; margin: 0 0 16px; color: #fff; }
@@ -181,6 +193,7 @@
     .journey { grid-template-columns: repeat(3, 1fr); row-gap: 30px; }
     .value-grid { grid-template-columns: 1fr; }
     .origin { grid-template-columns: 1fr; }
+    .zenos-grid { grid-template-columns: 1fr; }
     .pricing-grid { grid-template-columns: 1fr; }
     nav .links { display: none; }
   }
@@ -266,6 +279,24 @@
       <div class="jstep"><div class="ic"><img src="/assets/04_conduz.svg" alt=""></div><div class="n">04</div><h3>Conduz</h3><p>Apresenta soluções personalizadas, esclarece dúvidas e supera objeções.</p></div>
       <div class="jstep"><div class="ic"><img src="/assets/05_agenda.svg" alt=""></div><div class="n">05</div><h3>Agenda</h3><p>Integra com a agenda da clínica e encontra o melhor horário.</p></div>
       <div class="jstep"><div class="ic"><img src="/assets/06_confirma.svg" alt=""></div><div class="n">06</div><h3>Confirma</h3><p>Envia confirmações automáticas e lembretes — reduz drasticamente o no-show.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="zenos-section">
+  <div class="container zenos-grid">
+    <div>
+      <span class="eyebrow" style="background:var(--champagne);">Atendimento e gestão em perfeita sintonia</span>
+      <h2 style="color:#fff;font-size:clamp(24px,3vw,32px);margin:0 0 16px;">SofIA <span style="color:var(--champagne);">↔</span> Agenda <span style="color:var(--champagne);">←</span> ZENOS</h2>
+      <p style="color:#cfe0ec;font-size:15.5px;line-height:1.7;margin:0 0 26px;">A SofIA conversa com o paciente. O ZENOS cuida da clínica. E é na agenda que tudo se conecta, em tempo real — sem planilha, sem retrabalho, sem horário duplicado.</p>
+      <a class="btn" style="background:var(--champagne);color:var(--navy);" href="#demo">Ver como funciona</a>
+    </div>
+    <div class="zenos-mockup">
+      <!-- placeholder — trocar por assets/mockup_zenos_agenda.png quando gerado -->
+      <div class="zenos-placeholder">
+        <div class="zp-label">Mockup ZENOS + SofIA</div>
+        <div class="zp-hint">laptop com agenda ZENOS · celular com chat SofIA</div>
+      </div>
     </div>
   </div>
 </section>
@@ -399,8 +430,8 @@
 <footer>
   <div class="container">
     <img src="/assets/symbol_t.png" alt="SofIA">
-    <div class="sig">"Atendimento sob controle."</div>
-    <p class="cobrand">SofIA — Atendimento sob controle. · ZENOS — Clínica sob controle.</p>
+    <div class="sig">SofIA — Atendimento que gera resultado.</div>
+    <p class="cobrand">Uma solução do ecossistema ZENOS →</p>
   </div>
 </footer>
 
