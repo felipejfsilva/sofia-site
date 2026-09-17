@@ -143,14 +143,6 @@
   .zenos-section { background: var(--navy); background: linear-gradient(155deg, var(--navy), #0a3454); padding: 90px 0; }
   .zenos-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 48px; align-items: center; }
   .zenos-mockup { display: flex; }
-  .zenos-placeholder {
-    width: 100%; aspect-ratio: 16/9; border-radius: var(--r-lg);
-    border: 1.5px dashed rgba(198,174,131,.5); background: rgba(255,255,255,.04);
-    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
-    text-align: center; padding: 20px;
-  }
-  .zp-label { font-family: "Bodoni Moda", serif; font-size: 18px; color: var(--champagne); }
-  .zp-hint { font-size: 12px; color: #9db3c2; }
   .origin-card { background: var(--navy); background: linear-gradient(160deg, var(--navy), var(--blue-deep)); color: #fff; border-radius: var(--r-lg); padding: 40px; }
   .origin-card .eyebrow { background: var(--champagne); color: var(--navy); }
   .origin-card h2 { font-size: 25px; margin: 0 0 16px; color: #fff; }
@@ -292,11 +284,7 @@
       <a class="btn" style="background:var(--champagne);color:var(--navy);" href="#demo">Ver como funciona</a>
     </div>
     <div class="zenos-mockup">
-      <!-- placeholder — trocar por assets/mockup_zenos_agenda.png quando gerado -->
-      <div class="zenos-placeholder">
-        <div class="zp-label">Mockup ZENOS + SofIA</div>
-        <div class="zp-hint">laptop com agenda ZENOS · celular com chat SofIA</div>
-      </div>
+      <img src="/assets/mockup_zenos_agenda.jpg" alt="Dashboard de agenda ZENOS num laptop ao lado de uma conversa com a SofIA num celular" loading="lazy" style="width:100%;border-radius:var(--r-lg);box-shadow:var(--shadow-card);">
     </div>
   </div>
 </section>
